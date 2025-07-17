@@ -1,0 +1,26 @@
+constellation:
+  type: delta
+  altitude: 550e3          # altitude above Earth in meters
+  inc_deg: 53.0
+  parameters:
+    t: 4                   # total satellites
+    p: 2                   # number of planes
+    f: 1                   # phasing factor
+
+targets:
+  orbits:
+    - elements:
+        a: 7000e3
+        e: 0.0
+        i: 0.0
+        Ω: 0.0
+        ω: 0.0
+
+simulation:
+  duration: 5400           # seconds
+  dt: 60                   # timestep in seconds
+
+beams:
+  divergence_half_angle: 20.0   # deg
+  scan_half_angle: 20.0         # deg
+
